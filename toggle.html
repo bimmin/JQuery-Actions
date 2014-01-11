@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Practicing JQery and Bootstrap</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" media="screen" rel="stylesheet">
+<link href="custom.css" media="screen" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+
+	<div class="row">
+		<div class="span4">
+
+<div class="well sidebar-nav">
+        <ul class="nav nav-list">
+        <li><a href="index.html">Home</a></li>
+		<li><a href="addclass.html">.addclass</a></li>
+		<li><a href="after.html">.after</a></li>
+		<li><a href="append.html">.append</a></li>
+		<li><a href="attr.html">.attr</a></li>
+		<li><a href="before.html">.before</a></li>
+		<li><a href="html.html">.html</a></li>
+		<li><a href="text.html">.text</a></li>
+		<li><a href="val.html">.val</a></li>
+		<li class="active"><a href="toggle.html">.toggle</a></li>
+		<li><a href="hide.html">.hide</a></li>
+		<li><a href="show.html">.show</a></li>
+		<li><a href="slideDown.html">.slideDown</a></li>
+		<li><a href="slideUp.html">.slideup</a></li>
+		<li><a href="fadeOut.html">.fadeOut</a></li>
+		<li><a href="fadeIn.html">.fadeIn</a></li>
+		<li><a href="submit.html">.submit</a></li>
+		<li><a href="serialize.html">.serialize</a></li>
+		<li><a href="focus.html">.focus</a></li>
+		<li><a href="click.html">.click</a></li>
+
+	</ul>
+</div><!--close header-->
+</div><!--close span4-->
+<div class="span8">
+	<h1>.toggle</h1>
+
+<p>XOXO kale chips occupy literally messenger bag selfies. You probably haven't heard of them occupy ugh craft beer kale chips Tonx. Selfies fingerstache mlkshk twee, Tumblr mixtape pickled banjo Wes Anderson iPhone bitters. Schlitz cray locavore pop-up, next level Pitchfork hella Etsy salvia Shoreditch. Mumblecore cliche swag kale chips butcher try-hard kitsch Tumblr, cornhole whatever. Artisan narwhal +1 fashion axe mlkshk. Gastropub Tonx biodiesel, ennui cardigan keytar cray Godard pickled bitters occupy.</p>
+
+<p>Carles bespoke plaid tousled swag. Photo booth bespoke DIY, High Life biodiesel swag Pitchfork narwhal dreamcatcher. Master cleanse VHS semiotics ethical, squid umami vegan tousled twee banjo. Mustache biodiesel post-ironic small batch Vice, dreamcatcher Brooklyn gastropub brunch blog. Bitters direct trade trust fund, letterpress hashtag whatever literally flannel wolf. Artisan iPhone PBR&B pour-over 8-bit single-origin coffee. Scenester selfies trust fund hoodie, tattooed stumptown single-origin coffee dreamcatcher Schlitz iPhone.</p>
+
+<h2>Find out more</h2>
+
+<form>
+	<p><input id="button1" type="submit" value="No Marketing"></p>
+Name: <input id="name" type="text" name="firstname"><br>
+Email: <input id="email" type="text" name="email">
+<p class ="marketing">Sign up for:
+<input type="checkbox" name="newsletter" value="newsletter"> Newsletter<br>
+<input type="checkbox" name="special offers" value="offers"> Special Offers</p>
+<input type="submit" value="Submit"> 
+</form> 
+
+<div id="output"></div>
+
+
+	</div><!--close span8-->
+
+</div><!--close row-->
+</div><!--close container-->
+
+<!--Script Seems to work but immeditatly disapears! Not sure why, maybe something in bootstrat-->
+<script>
+$("#button1").click(function() {
+	$(".marketing").toggle();
+	return false;
+});
+
+</script>
+
+</body>
+</html>
